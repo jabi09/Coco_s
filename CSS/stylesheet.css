@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .modak-regular {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+  /* .chango-regular {
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    .chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+   */
+  
+/* Immer am anfang in ein CSS Dokument, es hilft das es keine fehler gibt*/
+
+body{
+    font-family: Arial;
+}
+
+header {
+    background-color: #0f5056;
+    height: 300px;
+    background-size: 100%;
+    position: relative;
+
+}
+
+.Titel {
+    font-family: Modak;
+    color: #ff81d0;
+    font-size: 100pt;
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+.lebensfreunde{
+    margin-left: 30px;
+    height: 70px;
+    position: absolute;
+    top: 150px;
+}
+
+nav {
+    background-color: #c6aa95;
+    font-family: Quicksand;
+    font-weight: bolder;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #400035;
+}
+
+.Kokosnuss {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.content { 
+   
+    padding: 60px;
+}
+p{
+    font-family: Quicksand;
+}
+.background {
+    background-image: url('../img/Zeichenflaeche1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: top;
+}
+
+.Logo_weiss{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 625px;
+    right: 10px;
+    z-index: 2;
+}
+
+footer {
+    background-color: #c6aa95;
+    height: 150px;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer p {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: small;
+}
+
+
+.active {
+    text-decoration: underline;
+}
+
+
+#fbox1 {
+    width: 50%;
+    /*Macht das es die hälfte des Footers gross ist*/
+
+}
+
+
+
+div .gallery img {
+    width: 400px;
+    margin: 40px;
+    border-radius: 18px;
+}
+
+div .gallery video {
+    width: 400px;
+    margin: 40px;
+    border-radius: 18px;
+}
+
+h1 {
+    font-family: Chewy;
+    font-size: 40pt;
+    color: #02853f;
+    margin-bottom: 30px;
+    
+}
+
+.gallery-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Info{
+    border: #400035;
+    width: 100%;
+    display:flex; 
+    justify-content: space-between; 
+}
+
+.Kästchen {
+    background-color: #0f5056;
+    border-radius: 18px;
+    padding: 20px;
+    color:#fff;
+    width: 45%;
+    margin-right: 30px;
+    font-family: Quicksand;
+}
+
+
+b{
+    color:#ff81d0;
+    font-family: Chewy;
+    font-size: 15pt;
+}
+
+video{
+    
+    border-radius: 18px;
+    width: 100%;
+}
+
+
+
+.Linkeseite{
+    flex-direction: column;
+   gap: 25px; /* Abstand zwischen den Elementen */
+}
+
+.botton{
+    background-color: #ff81d0;
+    border-radius: 18px;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20pt;
+    font-family: Chewy;
+    margin: 0;
+   }
+
+
+.Klasse{
+   background-color: #ff81d0;
+   padding: 15px;
+   color:#fff;
+   margin-bottom: 10px;
+   margin-top: 15px;
+   border-radius: 18px;
+   width: 100%;
+   font-size: 20pt;
+   font-family: Chewy;
+   justify-content: center;
+}
+
+.botton a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20pt;
+}
+
+.botton a:hover
+{
+    color: #400035;
+}
+
+.Leiterbild{
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Vertikale Zentrierung */
+    align-items: center; /* Horizontale Zentrierung */
+    margin-bottom: 100px;
+}
+
+.gallery{
+    height: 581.35px;
+}
+
+.gallerybig{
+    
+}
+.gallerybig img{
+    width: 200px;
+    margin: 30px  
+}
+
+div .gallerybig img {
+    width: 400px;
+    margin: 40px;
+    border-radius: 18px;
+}
+div.gallerybig:hover {
+    font-weight: bold; /*Schrift wird fett*/
+    filter: grayscale(100%); /*beim drüberfahren wird es schwarzweiss*/
+  }
+
+.gallery img{
+width: 200px;
+margin: 30px;
+}
+
+/* flex-direction: column; Anordnung der Bilder untereinander */
+div.gallery:hover {
+    font-weight: bold; /*Schrift wird fett*/
+    filter: grayscale(100%); /*beim drüberfahren wird es schwarzweiss*/
+  }
+  
+  
+.desc{
+    padding-top: 5px; /*Abstand oben zum Bild*/
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: bolder;
+    color: #02853f;
+  }
+
+  legend{
+    color:#0f5056;
+    font-weight: bold;
+    background-color: #fff; /* Heller grauer Hintergrund für das Textfeld */
+    border: 1px  #fff ;  /* Leichter grauer Rand um das Textfeld */
+    border-radius: 18px;
+    padding: 5px;              /* Etwas Abstand innerhalb des Textfeldes */
+    margin: 15px;
+    font-family: Chewy;
+    font-size: 30px;
+    }
+
+    fieldset{
+        margin: 30px;
+        background-color: #ff81d0;
+        border: 1px solid #fff; /* Schwarzer, 1px dicker Rahmen */
+        color: #fff;
+        border-radius: 18px;
+        padding: 20px;
+    }
+
+fieldset p{
+    font-family: Quicksand ;
+}
+    label{
+        font-weight: bolder;
+        float: left;
+        background-color: #ff81d0;
+        font-family: Quicksand;
+        margin: 15px;
+        }
+        
+        .person label{
+        width: 10%; /*Prozent nicht Pixel, damit es sich verschiebt wenn man die Grösse verändert*/
+        
+        }
+        .input[type="text"] {
+            width: 90%;
+            font-size: 16px;
+            justify-content: flex-start;
+        }
+
+        .input[type="email"]{
+        
+            width: 20%;
+        }
+        
+        
+        .label{
+            width: 30%;
+        }
+        
+        .select {
+            width: 69.1%;
+            font-size: 16px;
+        }
+        .input [type="text"] {
+        width: 69%;
+        font-size: 16px;
+        }
+        
+    
+
+        input[type="text"] {
+            background-color: #fff; /* Heller grauer Hintergrund für das Textfeld */
+            border: 1px  #fff ;  /* Leichter grauer Rand um das Textfeld */
+            border-radius: 18px;
+            padding: 5px;              /* Etwas Abstand innerhalb des Textfeldes */
+            margin: 15px;
+            width: 90%;
+        }
+
+        input[type="radio"]{
+            margin: 15px;
+        }
+        input[type="date"]{
+            background-color: #fff; /* Heller grauer Hintergrund für das Textfeld */
+            border: 1px  #fff ;  /* Leichter grauer Rand um das Textfeld */
+            border-radius: 18px;
+            padding: 5px;              /* Etwas Abstand innerhalb des Textfeldes */
+            margin: 15px;
+        }
+
+        input[type="number"]{
+            background-color: #fff; /* Heller grauer Hintergrund für das Textfeld */
+            border: 1px  #fff ;  /* Leichter grauer Rand um das Textfeld */
+            border-radius: 18px;
+            padding: 5px;              /* Etwas Abstand innerhalb des Textfeldes */
+            margin: 15px;
+        }
+        input[type="email"]{
+            background-color: #fff; /* Heller grauer Hintergrund für das Textfeld */
+            border: 1px  #fff ;  /* Leichter grauer Rand um das Textfeld */
+            border-radius: 18px;
+            padding: 5px;              /* Etwas Abstand innerhalb des Textfeldes */
+            margin: 15px;
+            width: 90%;
+        }
+
+        .button{
+            background-color: #ff81d0; /* Heller grauer Hintergrund für das Textfeld */
+            border: 1px  #ff81d0 ;  /* Leichter grauer Rand um das Textfeld */
+            border-radius: 18px;
+            padding: 10px;              /* Etwas Abstand innerhalb des Textfeldes */
+            margin: 30px;
+            font-family: Chewy;
+            color: #fff;
+            font-size: 20pt;
+           
+        }
+
+        .Hier {
+            font-family: Chewy;
+          }
+
+        select{
+            background-color: #fff; /* Heller grauer Hintergrund für das Textfeld */
+            border: 1px  #fff ;  /* Leichter grauer Rand um das Textfeld */
+            border-radius: 18px;
+            padding: 5px;              /* Etwas Abstand innerhalb des Textfeldes */
+            margin: 15px;
+        }
+
+        a{
+            color: black;
+            font-family: Quicksand;
+            font-weight: bold;
+        }
+
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        
+        
+        
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 18px;
+            font-family: Quicksand;
+            margin: 30px;
+            border-collapse: separate;  /* Damit der Abstand zwischen den Zellen sichtbar wird */
+    border-spacing: 10px;  /* Abstand zwischen den Zellen */
+        }
+        
+        td {
+            padding: 12px;
+            text-align: left;
+            
+        }
+        
+        th {
+            background-color: #0f5056;
+            color: white;
+            border-radius: 18px;
+            padding: 12px;
+            text-align: left;
+            
+        }
+        
+       
+        
+        tr:hover td {
+            background-color: #ff81d0;
+            cursor: pointer;
+            border-radius: 18px;
+        }
+
+       /* border-collapse: collapse; */

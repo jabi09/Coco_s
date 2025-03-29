@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css" />
+    <title>COCO's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Chewy&family=Modak&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <p class="Titel">COCO's</p>
+        <a href="index.html">
+        <img class="lebensfreunde" src="../img/logo.png" alt="Lebensfreunde"></a>
+        <img class="Kokosnuss" src="../img/009777b6-cee2-4ef1-8e00-54394e571e37.png" alt="Kokosnuss">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Über uns</a></li>
+                <li><a class="active" href="Anmelden.html">Anmelden</a></li>
+                <li><a href="Gruppenstunde.html">Gruppenstunde</a></li>
+                <li><a href="Fotobuch.html">Fotobuch</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="background">
+            <!-- Hier ist der pinke Background -->
+        </div>
+        <img class="Logo_weiss" src="../img/Logoweiss.png" alt="Jubla Logo">
+
+        <div class="content">
+            <h1>Anmeldeformular Gruppenstunde</h1>
+        <p>Möchtest du dein Kind offiziel für die Gruppenstunde der COCO's anmelden, dann füll doch das Anmeldeformular aus.
+            <br>Falls du erst mal in die Gruppe schuppern möchtest, dann komm gerne einfach in die Gruppenstunde vorbei.<br>
+        <br>
+        Wir freuen uns auf neue Gesichter!</p>    
+
+            <form action="AnmeldeBestaetigung.html" method="post">  <!-- sagt das es beim klicken auf Senden hier drauf kommt -->
+            <fieldset>
+
+                <legend>Informationen zum Kind:</legend>
+
+                <p><label>Vor-/Nachname des Kindes:*</label><input type="text" name="vorname_Nachname" required=""></p>
+                <p><label>Geburtsdatum:*</label><input type="date" name="Geburtsdatum" required=""></p>
+                <p><label>Adresse:*</label><input type="text" name="Adresse" required=""></p>
+                <p><label>Wohnort:*</label><input type="text" name="Wohnort" required=""></p>
+                <p><label>Postleitzahl:*</label><input type="number" name="Postleitzahl" required=""></p>
+                <p><label>Allergien:</label><input type="text" name="Allergien" ></p>
+                <p><label>Was tun im Notfall (Allergien):</label><input type="text" name="Im Notfall" ></p>
+            </fieldset>
+
+               <fieldset>
+                <legend>Eltern Kontakt 1:</legend>
+                <p><label>Vor-/Nachname:*</label><input type="text" name="vorname_Nachname" required=""></p>
+                <p><label>Telefonnummer:*</label><input type="text" name="Telefonnummer" required=""></p>
+                <p><label>E-Mail:*</label>
+                <br>   
+                <input type="email" name="E-Mail" required=""></p>
+            </fieldset> 
+                <fieldset>
+                <legend>Eltern Kontakt 2:</legend>
+                <p><label>Vor-/Nachname:</label><input type="text" name="vorname_Nachname"></p>
+                <p><label>Telefonnummer:</label><input type="text" name="Telefonnummer"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Im Notfall</legend>
+                <p><label>Wer soll im Notfall alamiert werden?</label>
+                <input type="radio" name="Wer soll im Notfall alamiert werden?" value="Eltern Kontakt 1" required> Eltern Kontakt 1
+                <input type="radio" name="Wer soll im Notfall alamiert werden?" value="Eltern Kontakt 2" required> Eltern Kontakt 2
+                
+            </fieldset>
+            <fieldset>
+                <legend>Bestätigung:</legend>
+                <input type="radio" name="anrede" value="Ja" required> Ja, ich werde die im Anhang stehenden Dokumente meinem Kind in der nächsten Grupppenstunde unterschrieben mit geben.*
+            </fieldset>
+            
+        <fieldset>
+            <label>Was macht ihre Tochter am liebsten?</label>
+				<select id="liebsten">
+					<option value="-">-</option>
+					<option value="basteln">Basteln</option>
+					<option value="spielen">draussen Spielen</option>
+					<option value="verkleiden">sich verkleiden</option>
+                    <option value="kochen oder backen"> kochen/ backen</option>
+                    <option value="singen"> singen</option>
+				</select>
+        </fieldset>
+        <small><em>Die mit (*) gekennzeichneten Felder sind Pflichtfelder.</em></small>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>PDF zum Herunterladen</h1>
+    <p>Klicken Sie auf den folgenden Link, um das PDF-Dokument herunterzuladen:</p>
+    <a target="_blank" href="../assets/Datenschutz.pdf" download="../assets/Datenschutz.pdf">1. PDF herunterladen => Datenschutz</a>
+    <br>
+    <a target="_blank" href="../assets/Regeln.pdf" download="../assets/Regeln.pdf">2. PDF herunterladen => Regeln der Gruppenstunde</a>
+    <p>
+            <input class="button" type="submit" value="Senden"> 
+            <input class="button" type="reset" value="Löschen">
+        </p>
+        </form>
+        </div>
+
+    </main>
+    <footer>
+        <div id="fbox1">
+            <p>Leiterin: Jana Birchmeier</p>
+            <a class="Impressum" href="tel:+41784217414">Tel: 078 421 74 14</a><br>
+            <a class="Impressum" href="mailto:jana.birchmeier@hispeed.ch">Mail: jana.birchmeier@hispeed.ch</a><br>
+        </div>
+        <div id="fbox2">
+            <a class="Impressum" href="../pages/impressum.html">©2024 Impressum/ Datenschutzerklärung</a>
+        </div>
+    </footer>
+</body>
+</html>
